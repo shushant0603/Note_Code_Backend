@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     // origin: 'http://localhost:5173', // Your frontend URL
-    origin:'https://notecode-oz67.onrender.com/',
+    origin:'https://notecode-oz67.onrender.com',
     credentials: true, // Allow credentials (cookies, etc.)
   })
 );
