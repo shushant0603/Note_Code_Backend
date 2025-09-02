@@ -35,7 +35,9 @@ app.use('/api', fileRoutes);
 
 //.....................................................
 
-
+app.head("/", (req, res) => {
+  res.status(200).send(); // सिर्फ header जाएगा, body नहीं
+});
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
